@@ -11,12 +11,21 @@ li {
 a {
     text-decoration: none;
 }
+button, li, i {
+    cursor: pointer;
+}
 /* body {
     background-color:white;
 } */
 .wrapper70{
     width: 70%;
     margin: 0 auto;
+}
+.flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .relative {
     position: relative;
@@ -33,6 +42,9 @@ a {
 .bold {
     font-weight: bold;
 }
+.textCenter {
+    text-align: center;
+}
 .smallGreyText {
     font-size: 0.9em;
     color: grey;
@@ -42,6 +54,22 @@ a {
     color: #1eae96;
 }
 .greenText {
+    color: #1eae96;
+}
+.bigButton {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.greenButton {
+    border: 1px solid #1eae96;
+    background-color: #1eae96;
+    color: white;
+}
+.whiteButton {
+    border: 1px solid white;
+    background-color: white;
     color: #1eae96;
 }
 /* fine regole e classi generiche */
@@ -85,6 +113,7 @@ header {
 }
 /* fine header */
 /* inizio main */
+/* inizio jumbotron */
 #jumbotron {
     width: 100%;
     height: 80vh;
@@ -105,7 +134,6 @@ header {
 }
 #leftJumbotron {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 #leftJumbotron * {
@@ -125,6 +153,57 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+/* fine jumbotron */
+/* inizio we are pioneers */
+#pioneers {
+    width: 100%;
+    height: 80vh;
+}
+#pioneers .wrapper70 {
+    height: 100%;
+}
+#pioneers h4 {
+    color: #1eae96;
+    text-transform: capitalize;
+}
+#pioneers h2 {
+    width: 60%;
+    font-weight: bold;
+    text-align: center;
+}
+#pioneers .wrapper70 .contents {
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid gold; */
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+#pioneers .content {
+    width: 30%;
+    height: 45%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-align: justify;
+    
+}
+#pioneers .content img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
