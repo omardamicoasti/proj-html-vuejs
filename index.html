@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MaxCoach</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- inizio header  -->
+        <header>
+            <div class="headerLeft">
+                    <img src="img/dark-logo.png" alt="">
+            </div>
+            <div class="headerCenter">
+                    <ul>
+                        <li v-for="menuVoice in headerCenterMenu">{{ menuVoice }} <i class="fas fa-angle-down"></i></li>
+                    </ul>
+            </div>
+            <div class="headerRight">
+                    <ul> 
+                        <li v-for="language in languages"></li><img src="img/en.png" alt="">english <i class="fas fa-angle-down"></i></li>
+                    </ul>
+                    <div id="search">
+                        <input type="text"></div>
+                        <i class="fas fa-search"></i>
+                    </div>
+            </div>
+                
+
+            
+        </header>
+        <!-- fine header -->
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
