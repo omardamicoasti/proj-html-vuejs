@@ -4,19 +4,48 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+/* regole e classi generiche */
 li {
     list-style: none;
 }
 a {
     text-decoration: none;
 }
-body {
-    background-color: lightgrey;
-}
-.wrapper90{
-    width: 90%;
+/* body {
+    background-color:white;
+} */
+.wrapper70{
+    width: 70%;
     margin: 0 auto;
 }
+.relative {
+    position: relative;
+}
+.capitalized {
+    text-transform: capitalize;
+}
+.uppercased {
+    text-transform: uppercase;
+}
+.doubleSize {
+    font-size: 3em;
+}
+.bold {
+    font-weight: bold;
+}
+.smallGreyText {
+    font-size: 0.9em;
+    color: grey;
+}
+.boldGreenText {
+    font-weight: bold;
+    color: #1eae96;
+}
+.greenText {
+    color: #1eae96;
+}
+/* fine regole e classi generiche */
+/* header */
 header {
     width: 100%;
     height: 10vh;
@@ -27,7 +56,7 @@ header {
 }
 .headerLeft, .headerRight {
     width: 20%;
-    /* border: 1px solid black; */
+    /* border: 1px solid black;  */
 }
 .headerLeft, .headerCenter, .headerRight {
     text-transform: capitalize;
@@ -35,24 +64,71 @@ header {
 .headerLeft > img {
   width: 150px;
 }
-.headerRight  img, .headerRight ul i {
+.headerRight  img, .headerRight ul i, .headerCenter ul i {
   margin: 5px;
 }
 .headerCenter {
-    width: 50%;
+    width: 40%;
     /* border: 1px solid black; */
 }
 .headerCenter ul, .headerRight, .headerRight ul, .headerRight #search {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #search input {
     height: 10vh;
     border: 1px solid white;
     padding: 5px 5px;
-    border-left: 1px solid #bcbcbc;
+    border-left:
+    1px solid #bcbcbc;
 }
+/* fine header */
+/* inizio main */
+#jumbotron {
+    width: 100%;
+    height: 80vh;
+    background-image: url(img/home-business-hero-global-image.png);
+    background-color: #eceeef;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+    display: flex;
+    /* border: 5px solid lime; */
+}
+#jumbotron .wrapper70 {
+    display: flex;
+}
+#leftJumbotron, #rightJumbotron  {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+#leftJumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#leftJumbotron * {
+    margin: 20px 0;
+}
+#leftJumbotron > div {
+    width: 80%;
+    /* border: 1px solid black; */
+}
+#rightJumbotron > img {
+    height: 90%;
+    width: 80%;
+}
+#rightJumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+/* fine main */
 
 
 
