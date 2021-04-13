@@ -68,6 +68,23 @@ var app = new Vue({
           "Getting high quality, entrepreneur mindset driver online business coaching, is what is needed.",
       },
     ],
+    presentationContents: [
+      {
+        title: "How can we help?",
+        text:
+          "How many courses you've been on, using however many techniques and methods. unless you've come to realize the value of mindset, then you've yet to understand how success comes.",
+      },
+      {
+        title: "Why would I need a business COACH?",
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque veritatis doloribus exercitationem inventore quis assumenda accusamus placeat reprehenderit!",
+      },
+      {
+        title: "What is one-on-one coaching?",
+        text:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque veritatis doloribus exercitationem inventore quis assumenda accusamus placeat reprehenderit!",
+      },
+    ],
   },
 
   methods: {},
