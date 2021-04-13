@@ -56,13 +56,29 @@
                     <h4>let's dream big together</h4>
                     <h2>We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization.</h2>
                     <div class="contents">
-                        <div class="content" v-for="element in pioneersContents" >
-                            <img src="" alt="">
+                        <div class="content clearfix" v-for="element in pioneersContents" >
+                            <img src="img/maxcoach-shape-02.png" alt="">
                             <div>
                                 <h3 class="capitalized">{{ element.title }}</h3>
                                 <p class="smallGreyText">{{ element.text }}</p>
                             </div>
                         </div>                       
+                    </div>
+                </div>
+            </div>
+            <div id="explore">
+                <div class="wrapper70 flexColumnCenter">
+                    <h4>let's dream big together</h4>
+                    <h2>We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply
+                        executive coaching in the new age of digitalization.</h2>
+                    <div class="contents">
+                        <div class="content" v-for="element in exploreContents">
+                            <img :src="element.image" alt="">
+                            <h3 class="capitalized">{{ element.title }}</h3>
+                            <p class="smallGreyText">{{ element.text }}</p>
+                            <div class="discover"><p class="smallerSize greenText bold">Discover now</p></div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
