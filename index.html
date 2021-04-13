@@ -136,20 +136,18 @@
                     <h4 class="capitalized greenText">wanna tranform your life?</h4>
                     <h2>Upcoming Events</h2>
                     <div class="contents clearfix">
-                        <div class="content">
+                        <div class="content" v-for="element in eventsContents">
                             <div>
-                                <p class="smallGreyText">place</p>
-                                <h4 class="capitalized bold">title</h4>
+                                <p class="smallGreyText capitalized"><i class="fas fa-map-marker-alt"></i> {{ element.place }}, <span class="uppercased">{{ element.state }}</span> </p>
+                                <h4 class="capitalized bold">{{ element.title }}</h4>
                             </div>
                             <div class="textCenter">
-                                <p class="greenText doubleSize">day</p>
-                                <h4 class="uppercased">month</h4>
-                                <button class="bigButton greenButton"></button>
+                                <p class="greenText doubleSize">{{ element.day }}</p>
+                                <h4 class="uppercased">{{ element.month }}</h4>
+                                <button class="bigButton greenButton">Get ticket</button>
                             </div>
                         </div>
-                        
                     </div>
-                    
                 </div>
                 <p class="greyText">Excited about our new event? <span class="bold greenText">View all events <i class="fas fa-arrow-right"></i></span> </p>
             </div>

@@ -23,14 +23,14 @@ button, li, i {
 .wrapper70 {
     width: 70%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-.contents {
+/* .contents {
     border: 3px solid rgb(255, 0, 255);
 }
 .content {
     border: 1px solid lime;
-}
+} */
 .flexColumnCenter {
     display: flex;
     flex-direction: column;
@@ -315,7 +315,7 @@ main {
 #courses .content:nth-child(4) {
     background-image: url(img/stock-full-hd-06-443x600.jpg);
 }
-#courses > p {
+#courses > p, #events > p {
     padding: 10px 0;
     text-align: center;
 }
@@ -395,9 +395,8 @@ main {
     padding: 10px 10px;
 }
 #events .content p, #events .content h4 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
-
 /* fine events */
 
 
