@@ -61,6 +61,9 @@ button, li, i {
 .greenText {
     color: #1eae96;
 }
+.whiteText {
+    color: white;
+}
 .bigButton {
     width: 150px;
     height: 50px;
@@ -80,12 +83,16 @@ button, li, i {
 /* fine regole e classi generiche */
 /* header */
 header {
+    position: fixed;
     width: 100%;
     height: 10vh;
     background-color: #fefefe;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+main {
+    padding-top: 10vh;
 }
 .headerLeft, .headerRight {
     width: 20%;
@@ -159,9 +166,9 @@ header {
 }
 /* fine jumbotron */
 /* inizio pioneers */
-#pioneers, #explore {
+#pioneers {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     margin: 5vh 0;
 }
 #pioneers .wrapper70 {
@@ -171,17 +178,17 @@ header {
     color: #1eae96;
     text-transform: capitalize;
 }
-#pioneers h2, #explore h2 {
+#pioneers h2, #explore h2, #courses h2 {
     width: 60%;
     font-weight: bold;
     text-align: center;
 }
-#pioneers .wrapper70 .contents, #explore .wrapper70 .contents {
+#pioneers .wrapper70 .contents, #explore .wrapper70 .contents, #courses .wrapper70 .contents {
     width: 100%;
-    /* border: 1px solid gold; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* border: 1px solid gold; */
 }
 #pioneers .content {
     width: 30%;
@@ -201,10 +208,16 @@ header {
 /* fine pioneers */
 /* inizio explore */
 #explore {
+    width: 100%;
+    height: 80vh;
     background-color: #eceeef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid lime; */
 }
 #explore .wrapper70 {
-    height: 100%;
+    height: 90%;
 }
 #explore .content {
     width: 25%;
@@ -212,10 +225,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color:#fefefe;
-    /* border: 1px solid black; */
+    background-color: white;
     border-radius: 10px;
     text-align: center;
+    /* border: 1px solid black; */
 }
 #explore .content img {
     width: 100%;
@@ -228,10 +241,51 @@ header {
     align-items: center;
     justify-content: center;
 }
-/* #explore .content {
-    
-} */
-/* inizio explore */
+/* fine explore */
+/* inizio courses */
+#courses {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid lime; */
+}
+#courses .wrapper70 {
+    height: 90%; 
+    /* border: 1px solid red; */
+}
+#courses .content {
+    width: 22%;
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+    /* border: 1px solid black; */
+}
+#courses .content h4 {
+    margin-top: 20px;
+}
+#courses .content:nth-child(1) {
+    background-image: url(img/course-02-443x600.jpg);
+}
+#courses .content:nth-child(2) {
+    background-image: url(img/stock-full-hd-03-443x600.jpg);
+}
+#courses .content:nth-child(3) {
+    background-image: url(img/stock-full-hd-04-443x600.jpg);
+}
+#courses .content:nth-child(4) {
+    background-image: url(img/stock-full-hd-06-443x600.jpg);
+}
+
+/* fine courses */
 
 
 
