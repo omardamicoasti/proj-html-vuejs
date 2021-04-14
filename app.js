@@ -162,6 +162,28 @@ var app = new Vue({
         occupation: "it specialist",
       },
     ],
+    footerAddressContents: [
+      {
+        address: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+        phone: "+1 (305) 547-9909",
+        opening: "9am - 5m EST, Monday - Friday",
+        email: "support@maxcoach.com",
+      },
+    ],
+    footerExploreContents: [
+      "Start here",
+      "Blog",
+      "About us",
+      "Success story",
+      "Courses",
+      "Contact us",
+    ],
+    footerInformationContents: [
+      "Membership",
+      "Purchase guide",
+      "Private policy",
+      "Terms of service",
+    ],
   },
 
   methods: {},

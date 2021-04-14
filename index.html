@@ -183,16 +183,47 @@
                             </div>
                             <p class="greyText">Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
                             <div id="subscriptionField">
-                                <input type="text"><button class="greenButton">Subscribe</button>
+                                <input type="text" placeholder="Enter your email"><button class="greenButton">Subscribe</button>
                             </div>
                         </div>
                         <img src="img/maxcoach-shape-02.png" alt="">
                     </div>
                     
                 </div>
-            </div>
-            
+            </div> 
         </main>
+        <footer>
+            <div class="wrapper70">
+                <div id="footerLeft" >
+                    <h4>Address</h4>
+                    <ul v-for="element in footerAddressContents">
+                        <li>{{ element.address }}</li>
+                        <li>{{ element.phone }} {{ element.opening }}</li>
+                        <li>{{ element.email }}</li>
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footerRight">
+                    <div>
+                        <h4>Explore</h4>
+                        <ul>
+                            <li v-for="element in footerExploreContents">{{ element }}</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Information</h4>
+                        <ul>
+                            <li v-for="element in footerInformationContents">{{ element }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
 
         <!-- fine header -->
