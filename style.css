@@ -23,14 +23,14 @@ button, li, i {
 .wrapper70 {
     width: 70%;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
-/* .contents {
+.contents {
     border: 3px solid rgb(255, 0, 255);
 }
 .content {
     border: 1px solid lime;
-} */
+}
 .flexColumnCenter {
     display: flex;
     flex-direction: column;
@@ -57,6 +57,9 @@ button, li, i {
 }
 .bold {
     font-weight: bold;
+}
+.thin {
+    font-weight: lighter;
 }
 .textCenter {
     text-align: center;
@@ -215,7 +218,7 @@ main {
     font-weight: bold;
     text-align: center;
 }
-#pioneers .wrapper70 .contents, #explore .wrapper70 .contents, #courses .wrapper70 .contents, #events .wrapper70 .contents, #reviews .wrapper70 .contents {
+#pioneers .wrapper70 .contents, #explore .wrapper70 .contents, #courses .wrapper70 .contents, #events .wrapper70 .contents, #reviews .wrapper70 .contents, #subscribe .wrapper70 .contents {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -440,8 +443,60 @@ main {
     justify-content: space-between;
     padding: 0 20px;
 }
-
 /* fine reviews */
+/* inizio subscribe */
+#subscribe {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#subscribe .wrapper70 {
+    height: 70%; 
+}
+#subscribe .contents {
+    height: 90%;
+    align-items: center;
+}
+#subscribe .wrapper70 .content {
+    width: 80%;
+    height: 100%;
+}
+#subscribe .wrapper70 div:first-child {
+    display: flex;
+    flex-direction: row;
+}
+#subscribe .wrapper70 div:first-child h2 {
+     margin: 0 10px;
+}
+#subscribe .wrapper70 img {
+    width: 100px;
+    height: 100px;
+}
+#subscribe input {
+    width: 350px;
+    height: 50px;
+    border: 1px solid white;
+    padding: 10px 10px;
+    /* overflow: hidden; */
+} 
+#subscriptionField {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #bcbcbc;
+    overflow: hidden;
+    
+}
+#subscriptionField button {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    
+}
+/* fine subscribe */
+
 
 
 
