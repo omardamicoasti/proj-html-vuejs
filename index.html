@@ -26,7 +26,8 @@
             </div>
             <div class="headerRight">
                     <ul> 
-                        <li v-for="language in languages"></li><img src="img/en.png" alt="">english <i class="fas fa-angle-down"></i></li>
+                        <img src="img/en.png" alt=""> english <i class="fas fa-angle-down"></i>
+                        <!-- <li v-for="element in languages"><img :src="element.flag" alt="">{{ element.name }}</li> -->
                     </ul>
                     <div id="search">
                         <input type="text">
@@ -150,6 +151,26 @@
                     </div>
                 </div>
                 <p class="greyText">Excited about our new event? <span class="bold greenText">View all events <i class="fas fa-arrow-right"></i></span> </p>
+            </div>
+            <div id="reviews">
+                <div class="wrapper70 flexColumnCenter clearfix">
+                    <h4 class="capitalized greenText">people are prasing Maxcoach</h4>
+                    <h2>What make they love us?</h2>
+                    <div class="contents">
+                        <div class="content" v-for="element in reviewsContents">
+                            <h4 class="bold blueText">{{ element.title }}</h4>
+                            <p class="smallerSize justify">{{ element.text }}</p>
+                            <div>
+                                <img :src="element.profilePic" alt="">
+                                <div>
+                                    <p class="capitalized blueText">{{ element.name }}</p>
+                                    <p class="capitalized smallGreyText">/ {{ element.occupation }}</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
             </div>
             
         </main>

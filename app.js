@@ -6,9 +6,9 @@ var app = new Vue({
   data: {
     headerCenterMenu: ["home", "pages", "courses", "features", "blog", "shop"],
     languages: [
-      { flag: "en", name: "english" },
-      { flag: "de", name: "german" },
-      { flag: "fr", name: "french" },
+      { flag: "img/en.png", name: "english" },
+      { flag: "img/de.png", name: "german" },
+      { flag: "img/fr.png", name: "french" },
     ],
     pioneersContents: [
       {
@@ -133,6 +133,33 @@ var app = new Vue({
         day: "12",
         month: "aug",
         year: "2021",
+      },
+    ],
+    reviewsContents: [
+      {
+        title: "It's a choice of quality for people with special needs",
+        text:
+          "I'm a very strict persone so I require everything to be organized and neat. Then, i'll be able to make things right and shine. MaxCoach guys just got me.",
+        profilePic: "img/testimonial-avata-03.jpg",
+        name: "florence themes",
+        occupation: "multimedia admin",
+      },
+      {
+        title: "High level of efficiency and scientific teaching methods",
+        text:
+          "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. great study portal for people like me.",
+        profilePic: "img/testimonial-avata-02.jpg",
+        name: "mina hollance",
+        occupation: "freelancer",
+      },
+      {
+        title:
+          "Professional team of specialists and passionate  mentors at reach",
+        text:
+          "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+        profilePic: "img/testimonial-avata-04.jpg",
+        name: "madley pondor",
+        occupation: "it specialist",
       },
     ],
   },
