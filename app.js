@@ -1,9 +1,13 @@
 var app = new Vue({
   el: "#app",
 
-  mounted() {},
+  mounted() {
+    
+  },
 
   data: {
+    caret: "fas fa-caret-square-up",
+    presentationText: false,
     headerCenterMenu: ["home", "pages", "courses", "features", "blog", "shop"],
     languages: [
       { flag: "img/en.png", name: "english" },
@@ -186,7 +190,21 @@ var app = new Vue({
     ],
   },
 
-  methods: {},
+  methods: {
+    showPresentationText() {
+      if (this.presentationText == false) {
+        this.presentationText = true;
+        this.caret = "fas fa-caret-square-down";
+        document.getElementById("presentationText").style.display = "contents";
+      } else if (this.presentationText == true) {
+        this.presentationText = false;
+        this.caret = "fas fa-caret-square-up";
+        document.getElementById("presentationText").style.display = "none";
+      }
+        
+      
+    }
+  },
 });
 Vue.config.devtools = true;
 

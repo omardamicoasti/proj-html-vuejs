@@ -74,8 +74,7 @@
             <div id="explore">
                 <div class="wrapper70 flexColumnCenter clearfix">
                     <h4>let's dream big together</h4>
-                    <h2>We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply
-                        executive coaching in the new age of digitalization.</h2>
+                    <h2>Explore how can I help you</h2>
                     <div class="contents">
                         <div class="content" v-for="element in exploreContents">
                             <img :src="element.image" alt="">
@@ -90,8 +89,7 @@
             <div id="courses">
                 <div class="wrapper70 flexColumnCenter clearfix">
                     <h4 class="capitalized greenText">let's dream big together</h4>
-                    <h2>We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply
-                        executive coaching in the new age of digitalization.</h2>
+                    <h2>Explore how can I help you</h2>
                     <div class="contents">
                         <div class="content">
                             <h4 class="greenText bold blackShadow">$40.00</h4>
@@ -122,10 +120,10 @@
                     <div id="presentationRight">
                         <h2 class="capitalized whiteText">to thrive in business today, you'll need a good plan</h2>
                         <div class="content clearfix justify" v-for="element in presentationContents">
-                            <div class="whiteText doubleSize"><i class="fas fa-caret-square-down"></i></div>
+                            <div class="whiteText doubleSize"><i :class="caret" @click="showPresentationText(element)"></i></div>
                             <div>
                                 <h3 class="greenText">{{ element.title }}</h3>
-                                <p class="whiteText smallerSize">{{ element.text }}</p>
+                                <p class="whiteText smallerSize" id="presentationText">{{ element.text }}</p>
                             </div>
                         </div>
                         

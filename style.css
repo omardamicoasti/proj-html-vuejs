@@ -114,7 +114,7 @@ button, li, i {
     color: #1eae96;
 }
 /* fine regole e classi generiche */
-.discover p, #courses .content, #presentationLeft #youtubeImg, #courses > p > span {
+.discover p, #courses .content, #presentationLeft #youtubeImg, #courses > p > span, #presentation i, #footerRight ul li {
     cursor: pointer;
 }
 /* header */
@@ -134,17 +134,15 @@ main {
 }
 .headerLeft, .headerRight {
     width: 20%;
-    /* border: 1px solid black;  */
+}
+.headerCenter {
+    width: 40%;
 }
 .headerLeft > img {
   width: 150px;
 }
-.headerRight  img, .headerRight ul i, .headerCenter ul i {
+.headerRight img, .headerRight ul i, .headerCenter ul i {
   margin: 5px;
-}
-.headerCenter {
-    width: 40%;
-    /* border: 1px solid black; */
 }
 .headerCenter ul, .headerRight, .headerRight ul, .headerRight #search {
     display: flex;
@@ -176,7 +174,6 @@ main {
 }
 #leftJumbotron, #rightJumbotron  {
     width: 50%;
-    /* border: 1px solid black; */
 }
 #leftJumbotron {
     display: flex;
@@ -187,11 +184,9 @@ main {
 }
 #leftJumbotron > div {
     width: 80%;
-    /* border: 1px solid black; */
 }
 #rightJumbotron > img {
     height: 90%;
-    width: 80%;
 }
 #rightJumbotron {
     display: flex;
@@ -201,12 +196,12 @@ main {
 }
 /* fine jumbotron */
 /* inizio pioneers */
-#pioneers, #events {
+#pioneers, #events, #explore, #presentation {
     width: 100%;
     height: 90vh;
     margin: 5vh 0;
 }
-#pioneers .wrapper70, #events .wrapper70  {
+#pioneers .wrapper70, #events .wrapper70, #presentation .wrapper70  {
     height: 100%;
 }
 #pioneers h4, #explore h4 {
@@ -245,15 +240,12 @@ main {
 /* fine pioneers */
 /* inizio explore */
 #explore {
-    width: 100%;
-    height: 90vh;
     background-color: #eceeef;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid lime; */
 }
-#explore .wrapper70 {
+#explore .wrapper70, #courses .wrapper70 {
     height: 90%;
 }
 #explore .content {
@@ -288,9 +280,6 @@ main {
     flex-direction: column;
     justify-content: center;
     /* border: 1px solid lime; */
-}
-#courses .wrapper70 {
-    height: 90%; 
 }
 #courses .content {
     width: 22%;
@@ -340,13 +329,11 @@ main {
     justify-content: center;
 }
 #presentation .wrapper70 {
-    height: 80%;
     display: flex;
 }
 #presentationLeft, #presentationRight {
     width: 50%;
     height: 100%;
-    /* border: 1px solid white; */
 }
 #presentationLeft {
     display: flex;
@@ -365,9 +352,6 @@ main {
     z-index: 999;
     position: absolute;
 }
-/* #presentationRight * {
-    border: 1px solid white;
-} */
 #presentationRight {
     display: flex;
     flex-direction: column;
@@ -388,6 +372,9 @@ main {
 }
 #presentationRight .content > div {
     padding-right: 50px;
+}
+#presentationText {
+    display: none;
 }
 /* fine presentation */
 /* inizio events */
