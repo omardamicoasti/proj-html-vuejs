@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+
 }
 /* regole e classi generiche */
 li {
@@ -114,8 +115,17 @@ button, li, i {
     color: #1eae96;
 }
 /* fine regole e classi generiche */
+.content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 .discover p, #courses .content, #presentationLeft #youtubeImg, #courses > p > span, #presentation i, #footerRight ul li {
     cursor: pointer;
+}
+.headerCenter li:hover, .headerRight i:hover {
+    color: grey;
+}
+#courses .contents h4:first-child:hover, footer li:hover, footer i:hover {
+    color: white;
 }
 /* header */
 header {
@@ -221,18 +231,22 @@ main {
 }
 #pioneers .content {
     width: 30%;
-    height: 45%;
+    height: 40%;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
     text-align: justify;
+    padding: 10px 10px;
 }
 #pioneers .content img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
     z-index: 0;
+}
+#pioneers .content h3 {
+    padding-bottom: 10px;
 }
 #pioneers button {
     margin: 0 20px;
@@ -342,15 +356,17 @@ main {
 }
 #presentationLeft > div {
     width: 80%;
-    height: 55%;
 }
 #presentationLeft #mainImg {
     width: 100%;
 }
 #presentationLeft #youtubeImg {
-    width: 5%;
+    width: 12%;
     z-index: 999;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 #presentationRight {
     display: flex;

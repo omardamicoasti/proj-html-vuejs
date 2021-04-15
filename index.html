@@ -111,7 +111,7 @@
                 </div>
                 <p class="greyText">Take the control of their life back and start doing things to make their <br> dream come true. <span class="bold">View all courses <i class="fas fa-arrow-right"></i></span>  </p>
             </div>
-            <div id="presentation">
+            <!-- <div id="presentation">
                 <div class="wrapper70 clearfix">
                     <div id="presentationLeft">
                         <div class="clearfix"><img src="img/home-business-video-poster-670x450.jpg" id="mainImg"></div>
@@ -127,6 +127,25 @@
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+            </div> -->
+            <div id="presentation">
+                <div class="wrapper70 clearfix">
+                    <div id="presentationLeft">
+                        <div class="clearfix  relative"><img src="img/home-business-video-poster-670x450.jpg" id="mainImg"><img src="img/icon-youtube-play.png" id="youtubeImg"></div>
+                        
+                    </div>
+                    <div id="presentationRight">
+                        <h2 class="capitalized whiteText">to thrive in business today, you'll need a good plan</h2>
+                        <div class="content clearfix justify" v-for="(element, index) in presentationContents">
+                            <div class="whiteText doubleSize"><i :class="caret" @click="showPresentationText(index)"></i></div>
+                            <div>
+                                <h3 class="greenText">{{ element.title }}</h3>
+                                <p class="whiteText smallerSize" v-if="presentationText">{{ element.text }}</p>
+                            </div>
+                        </div>
+            
                     </div>
                 </div>
             </div>

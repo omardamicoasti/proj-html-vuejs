@@ -1,12 +1,11 @@
 var app = new Vue({
   el: "#app",
 
-  mounted() {
-    
-  },
+  mounted() {},
 
   data: {
-    caret: "fas fa-caret-square-up",
+    counter: 0,
+    caret: "fas fa-caret-square-down",
     presentationText: false,
     headerCenterMenu: ["home", "pages", "courses", "features", "blog", "shop"],
     languages: [
@@ -192,16 +191,8 @@ var app = new Vue({
 
   methods: {
     showPresentationText() {
-      if (this.presentationText == false) {
-        this.presentationText = true;
-        this.caret = "fas fa-caret-square-down";
-        document.getElementById("presentationText").style.display = "contents";
-      } else if (this.presentationText == true) {
-        this.presentationText = false;
-        this.caret = "fas fa-caret-square-up";
-        document.getElementById("presentationText").style.display = "none";
-      }
-        
+      this.presentationText = !this.presentationText;
+      this.caret = "fas fa-caret-square-up";     
       
     }
   },
