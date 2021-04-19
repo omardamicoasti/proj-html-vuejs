@@ -118,18 +118,21 @@ button, li, i {
 .content {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.discover p, #courses .content, #presentationLeft #youtubeImg, #courses > p > span, #presentation i, #footerRight ul li {
+.discover p, #courses .content, #presentationLeft #youtubeImg, #courses > p > span, #presentation i, #footerRight ul li, #events .wrapper70 p span {
     cursor: pointer;
 }
 .headerCenter li:hover, .headerRight i:hover {
     color: grey;
+     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 #courses .contents h4:first-child:hover, footer li:hover, footer i:hover {
     color: white;
+    font-weight: bolder;
 }
 /* header */
 header {
     position: fixed;
+    z-index: 999;
     width: 100%;
     height: 10vh;
     background-color: #fefefe;
@@ -359,10 +362,11 @@ main {
 }
 #presentationLeft #mainImg {
     width: 100%;
+    z-index: 997;
 }
 #presentationLeft #youtubeImg {
     width: 12%;
-    z-index: 999;
+    z-index: 998;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -405,7 +409,7 @@ main {
 }
 #events .content p, #events .content h4, #events .content {
     margin-bottom: 15px;
-}
+} 
 /* fine events */
 /* inizio reviews */
 #reviews {
@@ -463,7 +467,7 @@ main {
     align-items: center;
 }
 #subscribe .wrapper70 .content {
-    width: 80%;
+    width: 70%;
     height: 100%;
 }
 #subscribe .wrapper70 div:first-child {
@@ -527,12 +531,12 @@ footer .wrapper70 #footerRight div:first-child {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-footer li {
+footer li, footer i {
     color: #bcbcbc;
     font-size: 0.8em;
     padding: 10px 0px;
 }
-footer li i {
+footer li i, footer i {
     margin-right: 20px;
     font-size: 2em;
 }
@@ -541,6 +545,7 @@ footer h4 {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 /* fine footer */
 
 

@@ -4,7 +4,7 @@ var app = new Vue({
   mounted() {},
 
   data: {
-    counter: 0,
+    counter: -1,
     caret: "fas fa-caret-square-down",
     presentationText: false,
     headerCenterMenu: ["home", "pages", "courses", "features", "blog", "shop"],
@@ -190,10 +190,14 @@ var app = new Vue({
   },
 
   methods: {
-    showPresentationText() {
+    showPresentationText(index) {
+      this.counter = (index == this.counter) ? -1 : index;
       this.presentationText = !this.presentationText;
-      this.caret = "fas fa-caret-square-up";     
-      
+      if (this.caret == "fas fa-caret-square-down") {
+        this.caret = "fas fa-caret-square-up"; 
+      } else {
+        this.caret = "fas fa-caret-square-down";
+      }
     }
   },
 });

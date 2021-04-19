@@ -111,30 +111,10 @@
                 </div>
                 <p class="greyText">Take the control of their life back and start doing things to make their <br> dream come true. <span class="bold">View all courses <i class="fas fa-arrow-right"></i></span>  </p>
             </div>
-            <!-- <div id="presentation">
-                <div class="wrapper70 clearfix">
-                    <div id="presentationLeft">
-                        <div class="clearfix"><img src="img/home-business-video-poster-670x450.jpg" id="mainImg"></div>
-                        <img src="img/icon-youtube-play.png" id="youtubeImg">
-                    </div>
-                    <div id="presentationRight">
-                        <h2 class="capitalized whiteText">to thrive in business today, you'll need a good plan</h2>
-                        <div class="content clearfix justify" v-for="element in presentationContents">
-                            <div class="whiteText doubleSize"><i :class="caret" @click="showPresentationText(element)"></i></div>
-                            <div>
-                                <h3 class="greenText">{{ element.title }}</h3>
-                                <p class="whiteText smallerSize" id="presentationText">{{ element.text }}</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div> -->
             <div id="presentation">
                 <div class="wrapper70 clearfix">
                     <div id="presentationLeft">
                         <div class="clearfix  relative"><img src="img/home-business-video-poster-670x450.jpg" id="mainImg"><img src="img/icon-youtube-play.png" id="youtubeImg"></div>
-                        
                     </div>
                     <div id="presentationRight">
                         <h2 class="capitalized whiteText">to thrive in business today, you'll need a good plan</h2>
@@ -142,10 +122,9 @@
                             <div class="whiteText doubleSize"><i :class="caret" @click="showPresentationText(index)"></i></div>
                             <div>
                                 <h3 class="greenText">{{ element.title }}</h3>
-                                <p class="whiteText smallerSize" v-if="presentationText">{{ element.text }}</p>
+                                <p class="whiteText smallerSize" v-if="index == counter">{{ element.text }}</p>
                             </div>
                         </div>
-            
                     </div>
                 </div>
             </div>
@@ -166,8 +145,9 @@
                             </div>
                         </div>
                     </div>
+                    <p class="greyText">Excited about our new event? <span class="bold greenText">View all events <i
+                                class="fas fa-arrow-right"></i></span> </p>
                 </div>
-                <p class="greyText">Excited about our new event? <span class="bold greenText">View all events <i class="fas fa-arrow-right"></i></span> </p>
             </div>
             <div id="reviews">
                 <div class="wrapper70 flexColumnCenter clearfix">
@@ -217,13 +197,11 @@
                         <li>{{ element.address }}</li>
                         <li>{{ element.phone }} {{ element.opening }}</li>
                         <li>{{ element.email }}</li>
-                        <li>
-                            <i class="fab fa-facebook-square"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-linkedin"></i>
-                        </li>
                     </ul>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
                 </div>
                 <div id="footerRight">
                     <div>
